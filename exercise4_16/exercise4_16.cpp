@@ -1,26 +1,11 @@
-// drill4_2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// exercise4_16.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "../../../libraries/std_lib_facilities.h"
 
 int main()
-{	
-	cout << "Enter some distances: \n";
-	vector<double> distances;
-	double distance;
-	while (cin >> distance) {
-		distances.push_back(distance);
-	}
-	double sum = 0;
-	for (int x : distances) {
-		sum += x;
-	}
-	sort(distances);
-	cout << "\nTotal distance: " << sum
-		<< "\nSmallest distance: " << distances[0]
-		<< "\nLargest distance: " << distances[distances.size() - 1]
-		<< "\nMean distance: " << sum / distances.size();
-
+{
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

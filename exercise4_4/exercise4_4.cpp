@@ -1,25 +1,28 @@
-// drill4_2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// exercise4_4.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "../../../libraries/std_lib_facilities.h"
 
 int main()
-{	
-	cout << "Enter some distances: \n";
-	vector<double> distances;
-	double distance;
-	while (cin >> distance) {
-		distances.push_back(distance);
+{
+	vector<double> differences = { 25, 12, 6, 3, 2, 1, 1 };
+	string input;
+	int guess = 50;
+	cout << "Number between 1-100:\n";
+	int i = 0;
+	while (input != "y") {
+		cout << "Is it " << guess << "? +, - or y\n";
+		cin >> input;
+		if (input == "+") {
+			guess = guess + differences[i];
+			i++;
+		}
+		if (input == "-") {
+			guess = guess - differences[i];
+			i++;
+		}
 	}
-	double sum = 0;
-	for (int x : distances) {
-		sum += x;
-	}
-	sort(distances);
-	cout << "\nTotal distance: " << sum
-		<< "\nSmallest distance: " << distances[0]
-		<< "\nLargest distance: " << distances[distances.size() - 1]
-		<< "\nMean distance: " << sum / distances.size();
+	cout << "Number is: " << guess;
 
 }
 
