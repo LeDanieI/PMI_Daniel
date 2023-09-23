@@ -1,11 +1,20 @@
 // drill4_2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
+#include "../../../libraries/std_lib_facilities.h"
 
 int main()
-{
-    std::cout << "Hello World!\n";
+{   
+    cout << "Enter two integers separated by spacebar:\n";
+    int a, b;
+    while (cin >> a >> b) {
+        if (a > b) {
+            cout << "Larger value is: " << a << "\nSmaller value is: " << b;
+        }
+        else {
+            cout << "Larger value is: " << b << "\nSmaller value is: " << a;
+        }
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "drill4_1", "drill4_1.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "drill4_2", "..\drill4_2\drill4_2.vcxproj", "{318208A8-2621-4F49-83F9-10FE147CA231}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "drill4_3", "..\drill4_3\drill4_3.vcxproj", "{83E6CA3A-FFB0-41FB-AA8A-A4B04DEA2DB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{318208A8-2621-4F49-83F9-10FE147CA231}.Release|x64.Build.0 = Release|x64
 		{318208A8-2621-4F49-83F9-10FE147CA231}.Release|x86.ActiveCfg = Release|Win32
 		{318208A8-2621-4F49-83F9-10FE147CA231}.Release|x86.Build.0 = Release|Win32
+		{83E6CA3A-FFB0-41FB-AA8A-A4B04DEA2DB5}.Debug|x64.ActiveCfg = Debug|x64
+		{83E6CA3A-FFB0-41FB-AA8A-A4B04DEA2DB5}.Debug|x64.Build.0 = Debug|x64
+		{83E6CA3A-FFB0-41FB-AA8A-A4B04DEA2DB5}.Debug|x86.ActiveCfg = Debug|Win32
+		{83E6CA3A-FFB0-41FB-AA8A-A4B04DEA2DB5}.Debug|x86.Build.0 = Debug|Win32
+		{83E6CA3A-FFB0-41FB-AA8A-A4B04DEA2DB5}.Release|x64.ActiveCfg = Release|x64
+		{83E6CA3A-FFB0-41FB-AA8A-A4B04DEA2DB5}.Release|x64.Build.0 = Release|x64
+		{83E6CA3A-FFB0-41FB-AA8A-A4B04DEA2DB5}.Release|x86.ActiveCfg = Release|Win32
+		{83E6CA3A-FFB0-41FB-AA8A-A4B04DEA2DB5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

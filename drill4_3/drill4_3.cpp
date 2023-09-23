@@ -5,11 +5,7 @@
 
 int main()
 {
-    cout << "Enter two integers separated by spacebar:\n";
-    int a, b;
-    while (cin >> a >> b) {
-        cout << a << " " << b << "\n";
-    }
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
