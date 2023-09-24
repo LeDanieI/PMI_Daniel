@@ -1,39 +1,21 @@
-// exercise4_16.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// exercise4_18.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "../../../libraries/std_lib_facilities.h"
 
 int main()
 {
-	cout << "Enter sequence of ints: \n";
-	vector<int> vec;
-	int input;
-	while (cin >> input) {
-		vec.push_back(input);
+	cout << "Enter a, b and c: \n";
+	double a, b, c, D;
+	cin >> a >> b >> c;
+	D = pow(b, 2) - 4 * a * c;
+	while (D < 0) {
+		cout << "D is negative!\n";
+		cin >> a >> b >> c;
+		D = pow(b, 2) - 4 * a * c;
 	}
-
-	sort(vec);
-	int count = 1;
-	int current_count = 1;
-	int mode = 0;
-	for (int i=1; i<vec.size(); i++){
-		if (vec[i] == vec[i - 1]) {
-			current_count++;
-			if (current_count > count) {
-				count = current_count;
-				mode = vec[i];
-			}
-		}
-		else{
-			current_count = 1;
-
-		}
-	}
-	cout << "Mode is: " << mode << "\n"
-		<< "Count is: " << count;
-
-	
-	
+	cout << "x1: " << (-b + sqrt(D)) / (2*a)
+		<< "\nx2: " << (-b - sqrt(D)) / (2*a);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
